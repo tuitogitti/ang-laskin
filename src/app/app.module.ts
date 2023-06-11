@@ -2,7 +2,10 @@
 AppModule eli sovelluksen päämoduuli
 
 Angular-sovellusten suurin rakenneosa on moduuli.
-Komponentit ja muut rakenneosat ovat moduulin sisällä.
+Komponentit ja muut rakenneosat ovat päämoduulin sisällä.
+Moduuli on tarpeellinen yleensä vain laajoissa sovelluksissa.
+Standalone-sovelluksissa ei ole päämoduulia, vaan rakenneosat
+ovat pääkomponentin eli app.componentin sisällä.
 */
 
 import { BrowserModule } from '@angular/platform-browser';

@@ -2,7 +2,7 @@
 Calculator-komponentin luokkaosa 
 
 Komponentin luokkaosassa on TypeScriptillä koodattu sovelluslogiikka
-Luokasta välitetään dataa käyttölittymään eli templaattiin ja toisinpäin.
+Luokasta välitetään dataa käyttöliittymään eli templaattiin ja toisinpäin.
 Luokkaosaa kutsutaan myös varsinaiseksi komponentiksi, sillä se sisältää
 kaikki komponentin osat määriteltynä dekoraattorissa.
 */
