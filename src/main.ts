@@ -1,7 +1,9 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+// Sovelluksen käynnistystiedosto (bootstrap tarkoittaa käynnistystä)
+import { bootstrapApplication } from '@angular/platform-browser';
+import { appConfig } from './app/app.config'; // sovelluksen konffit
+import { AppComponent } from './app/app.component';
 
-import { AppModule } from './app/app.module';
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+// Käynnistys tapahtuu AppComponentista ja konffit otetaan käyttöön
+bootstrapApplication(AppComponent, appConfig).catch((err) =>
+  console.error(err)
+);
