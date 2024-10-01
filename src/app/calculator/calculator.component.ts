@@ -8,7 +8,6 @@ kaikki komponentin osat määriteltynä dekoraattorissa.
 */
 
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 // @Component-dekoraattorimetodin argumenttina
@@ -16,7 +15,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-calculator', // komponentin html-tagi
   standalone: true, // komponentti ei ole moduulin sisällä
-  imports: [CommonModule, FormsModule], // komponentin riippuvuudet
+  imports: [FormsModule], // komponentin riippuvuudet
   templateUrl: './calculator.component.html', // templaatti
   styleUrl: './calculator.component.css', // tyylitiedosto
 })
