@@ -14,7 +14,6 @@ import { FormsModule } from '@angular/forms';
 // olevassa oliossa määritellään komponentin osat
 @Component({
   selector: 'app-calculator', // komponentin html-tagi
-  standalone: true, // komponentti ei ole moduulin sisällä
   imports: [FormsModule], // komponentin riippuvuudet
   templateUrl: './calculator.component.html', // templaatti
   styleUrl: './calculator.component.css', // tyylitiedosto

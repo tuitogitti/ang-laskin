@@ -9,7 +9,6 @@ import { CalculatorComponent } from './calculator/calculator.component';
 
 @Component({
   selector: 'app-root', // komponentin html-tagin nimi
-  standalone: true, // komponentti ei ole moduulin sisällä
   imports: [CalculatorComponent], // komponentin tarvitsemat riippuvuudet
   templateUrl: './app.component.html', // templaattiosa
   styleUrls: ['./app.component.css'] // tyyliosa
@@ -17,7 +16,5 @@ import { CalculatorComponent } from './calculator/calculator.component';
 // Luokka johon sovelluslogiikkakoodi tehdään
 export class AppComponent {
   title = 'Laskin';
-
-
 
 }
