@@ -5,16 +5,16 @@ App-komponentti on äitikomponentti jonka sisälle muut komponentit
 tulevat. Sen tehtävänä on toimia "säiliönä".
 */
 import { Component } from '@angular/core';
-import { CalculatorComponent } from './calculator/calculator.component';
+import { Calculator } from './calculator/calculator';
 
 @Component({
   selector: 'app-root', // komponentin html-tagin nimi
-  imports: [CalculatorComponent], // komponentin tarvitsemat riippuvuudet
-  templateUrl: './app.component.html', // templaattiosa
-  styleUrls: ['./app.component.css'] // tyyliosa
+  imports: [Calculator], // komponentin tarvitsemat riippuvuudet
+  templateUrl: './app.html', // templaattiosa
+  styleUrls: ['./app.css'] // tyyliosa
 })
 // Luokka johon sovelluslogiikkakoodi tehdään
-export class AppComponent {
+export class App {
   title = 'Laskin';
 
 }

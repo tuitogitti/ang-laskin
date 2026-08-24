@@ -15,14 +15,14 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-calculator', // komponentin html-tagi
   imports: [FormsModule], // komponentin riippuvuudet
-  templateUrl: './calculator.component.html', // templaatti
-  styleUrl: './calculator.component.css', // tyylitiedosto
+  templateUrl: './calculator.html', // templaatti
+  styleUrl: './calculator.css', // tyylitiedosto
 })
 /*
 Luokassa on ominaisuuksia eli propertyjä ja
 toiminnallisuuksia eli metodeja (luokan funktiota)
 */
-export class CalculatorComponent implements OnInit {
+export class Calculator implements OnInit {
   // ominaisuudet
 
   val1: number; // TS:ssä tietotyyppi merkitään kaksoispisteen perään
